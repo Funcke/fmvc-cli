@@ -1,0 +1,16 @@
+{
+    "name": "FMVC/CLI",
+    "description": "CLI for creating new FMVC projects & components",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jonas.funcke",
+            "email": "jonas@funcke.work"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
