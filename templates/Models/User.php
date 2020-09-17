@@ -1,7 +1,7 @@
 <?php
 namespace Models
 {
-    use Core\Data\DataObject;
+    use FMVC\Data\DataObject;
 
     /**
      * Class User

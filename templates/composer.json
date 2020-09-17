@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "Controller\\": "Controller/",
-            "Core\\": "Core/",
+            "FMVC\\": "FMVC/",
             "Middleware\\": "Middleware/",
             "Models\\": "Models"
         }

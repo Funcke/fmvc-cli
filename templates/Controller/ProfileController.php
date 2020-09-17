@@ -1,8 +1,8 @@
 <?php
-use Core\Controller;
-use Core\Data\SqlDataBase;
-use Core\Data\SqlTableCreator;
-use Core\Request;
+use FMVC\Controller;
+use FMVC\Data\SqlDataBase;
+use FMVC\Data\SqlTableCreator;
+use FMVC\Request;
 use Models\User;
 
 class ProfileController extends Controller

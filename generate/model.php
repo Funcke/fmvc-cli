@@ -2,7 +2,7 @@
 
 $content = "<?php\n"
 ."namespace Models {\n"
-."\tuse Core\Data\DataObject;\n\n"
+."\tuse FMVC\Data\DataObject;\n\n"
 ."/**\n* @table ".$argv[3]."\n*/\n"
 ."class ".$argv[3]." extends DataObject {\n"
 ."  /**\n"

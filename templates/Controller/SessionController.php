@@ -1,6 +1,6 @@
 <?php
-use Core\Controller;
-use Core\Request;
+use FMVC\Controller;
+use FMVC\Request;
 use Models\User;
 
 class SessionController extends Controller
