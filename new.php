@@ -2,7 +2,7 @@
 /**
  * Strategy for generating basic application skeleton
  */
-$location = realpath(dirname(__FILE__)) . '/..';
+$location = realpath(dirname(__FILE__));
 $argv[2] = getcwd()."/".$argv[2];
 mkdir($argv[2]);
 
@@ -13,7 +13,7 @@ copy($location . '/templates/config/routes.php', $argv[2] . '/config/routes.php'
 
 // initialize sample controller
 mkdir($argv[2] . '/Controller');
-copy($location . '/templates/Controller/IndexController.php', $argv[2] . '/Controller/IndexController.php');
+copy($location . '/templates/Controller/ProfileController.php', $argv[2] . '/Controller/ProfileController.php');
 
 // initialize middleware directory
 mkdir($argv[2] . '/Middleware');
@@ -29,6 +29,10 @@ mkdir($argv[2]."/test");
 mkdir($argv[2] . '/views');
 copy($location . '/templates/views/base.php', $argv[2] . '/views/base.php');
 copy($location . '/templates/views/error.php', $argv[2] . '/views/error.php');
+
+mkdir($argv[2]."/public");
+mkdir($argv[2]."/public/js");
+mkdir($argv[2]."/public/css");
 
 // Add misc files
 copy($location . '/templates/index.php', $argv[2] . '/index.php');

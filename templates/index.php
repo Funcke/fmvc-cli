@@ -12,9 +12,9 @@ session_start();
 
 error_reporting(E_ALL);
 require_once(__DIR__.'/vendor/autoload.php');
-    
-$request = new FMVC\Request();
-$router = new FMVC\Router(new ProductionEnvironmentAdapter(), require_once('config/routes.php'));
 
+$request = new FMVC\Request();
+$environment = new ProductionEnvironmentAdapter();
+$router = new FMVC\Router($environment, require_once('config/routes.php'));
 $result = $router->handleRequest($request);
 echo $result;
